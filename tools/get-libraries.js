@@ -76,6 +76,9 @@ var api = inherit(moduleConfig, {
                 function(error) {
                     enbTask.log(error + ' ' + libName)
                 })
+                .fail(function(error) {
+                    enbTask.log(error + ' ' + libName)
+                })
         }))
 
         return promise;
